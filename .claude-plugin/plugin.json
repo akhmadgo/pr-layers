@@ -1,0 +1,10 @@
+{
+  "name": "pr-layers",
+  "version": "0.1.0",
+  "description": "Split a PR into DOMAIN (what you're building), LANGUAGE (language/framework plumbing), and PLATFORM (cloud/vendor) layers, and surface product decisions hidden in plumbing.",
+  "author": { "name": "Akhmad Mamirov", "url": "https://github.com/akhmadgo" },
+  "homepage": "https://github.com/akhmadgo/pr-layers",
+  "repository": "https://github.com/akhmadgo/pr-layers",
+  "license": "MIT",
+  "keywords": ["code-review", "pull-request", "review", "skill"]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "pr-layers",
+  "description": "Claude Code skill that splits PRs into domain / language / platform layers for faster review.",
+  "owner": {
+    "name": "Akhmad Mamirov",
+    "url": "https://github.com/akhmadgo"
+  },
+  "plugins": [
+    {
+      "name": "pr-layers",
+      "source": "./",
+      "description": "Split a PR into DOMAIN / LANGUAGE / PLATFORM layers for faster human review."
+    }
+  ]
+}
