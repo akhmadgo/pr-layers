@@ -1,0 +1,108 @@
+#zeroth-bar { margin-bottom: 16px; }
+
+.z-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  background: #f6f8fa;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  flex-wrap: wrap;
+}
+
+[data-color-mode="dark"] .z-bar,
+[data-color-mode="auto"][data-dark-theme] .z-bar {
+  background: #161b22;
+  border-color: #30363d;
+}
+
+.z-logo {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #57606a;
+  flex-shrink: 0;
+}
+
+.z-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  flex: 1;
+}
+
+.z-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 9px;
+  border-radius: 20px;
+  border: 1px solid var(--c, #6B7280);
+  background: transparent;
+  color: var(--c, #6B7280);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  transition: background 0.12s;
+  line-height: 1;
+}
+
+.z-chip:hover, .z-chip.z-active {
+  background: color-mix(in srgb, var(--c, #6B7280) 14%, transparent);
+}
+
+.z-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--c, #6B7280);
+  flex-shrink: 0;
+}
+
+.z-n {
+  font-weight: 600;
+  margin-left: 1px;
+}
+
+.z-reset {
+  font-size: 12px;
+  color: #57606a;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  font-family: inherit;
+}
+
+.z-hidden { display: none !important; }
+
+.z-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 8px;
+  padding: 1px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.z-badge.z-loading {
+  background: #f0f0f0 !important;
+  color: #aaa !important;
+  border: 1px solid #ddd !important;
+  animation: z-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes z-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+.file.z-hidden { display: none !important; }

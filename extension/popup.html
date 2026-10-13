@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    width: 260px;
+    padding: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 13px;
+    color: #1f2328;
+    background: #fff;
+  }
+  h1 {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    color: #1f2328;
+  }
+  label {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    color: #57606a;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 5px;
+  }
+  input {
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    font-size: 12px;
+    font-family: monospace;
+    color: #1f2328;
+    outline: none;
+  }
+  input:focus { border-color: #0969da; box-shadow: 0 0 0 3px rgba(9,105,218,.1); }
+  button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 7px;
+    background: #1f883d;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  button:hover { background: #1a7f37; }
+  .ok { margin-top: 7px; font-size: 12px; color: #1a7f37; display: none; }
+  .hint { margin-top: 8px; font-size: 11px; color: #57606a; line-height: 1.4; }
+</style>
+</head>
+<body>
+  <h1>zeroth</h1>
+  <label for="ep">API endpoint</label>
+  <input id="ep" type="text" placeholder="http://your-vps:8080">
+  <button id="save">Save</button>
+  <div class="ok" id="ok">Saved!</div>
+  <p class="hint">Self-host the API on your own VPS and paste the server URL above.</p>
+  <script src="src/popup.js"></script>
+</body>
+</html>

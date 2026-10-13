@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Zeroth",
+  "version": "0.1.0",
+  "description": "Group and highlight PR changes by what actually matters",
+  "permissions": ["storage"],
+  "host_permissions": ["https://github.com/*"],
+  "content_scripts": [{
+    "matches": ["https://github.com/*/pull/*"],
+    "js": ["src/content.js"],
+    "css": ["src/content.css"],
+    "run_at": "document_idle"
+  }],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Zeroth"
+  }
+}
